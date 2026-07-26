@@ -1,0 +1,152 @@
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4f6f8;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  padding: 20px;
+}
+
+.auth-card {
+  background: #FFFFFF;
+  border: 1px solid #D0D7DE;
+  border-radius: 16px;
+  padding: 40px 32px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  animation: fadeIn 0.4s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.auth-logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0969DA;
+  margin-bottom: 16px;
+}
+
+.auth-card h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #1F2328;
+  margin: 0 0 4px;
+}
+
+.auth-sub {
+  color: #656D76;
+  margin: 0 0 24px;
+  font-size: 0.9rem;
+}
+
+.field {
+  margin-bottom: 16px;
+}
+
+.field label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #1F2328;
+}
+
+.field input {
+  width: 100%;
+  padding: 10px 14px;
+  background: #FFFFFF;
+  border: 1px solid #D0D7DE;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  color: #1F2328;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.field input:focus {
+  border-color: #0969DA;
+  box-shadow: 0 0 0 3px rgba(9,105,218,0.15);
+}
+
+.field input::placeholder {
+  color: #959DA5;
+}
+
+.field-error {
+  color: #CF222E;
+  font-size: 0.8rem;
+  margin-top: 4px;
+}
+
+.error-msg {
+  background: #FFEBE9;
+  border: 1px solid #FFC1C1;
+  color: #CF222E;
+  padding: 10px 14px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.error-msg::before {
+  content: '!';
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.btn-primary {
+  width: 100%;
+  padding: 11px;
+  background: #0969DA;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-top: 8px;
+}
+
+.btn-primary:hover {
+  background: #0550AE;
+}
+
+.btn-primary:disabled {
+  background: #8C959F;
+  cursor: not-allowed;
+}
+
+.auth-link {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #656D76;
+}
+
+.auth-link a {
+  color: #0969DA;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.auth-link a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  .auth-card {
+    padding: 24px 20px;
+  }
+  .auth-logo {
+    font-size: 1.3rem;
+  }
+}

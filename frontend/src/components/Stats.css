@@ -1,0 +1,54 @@
+.stats-page {
+  padding: 32px 40px;
+  background: #f4f6f8;
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.stats-page h1 {
+  font-size: 1.8rem;
+  color: #1F2328;
+  margin-bottom: 8px;
+}
+
+.stats-benefits {
+  color: #656D76;
+  font-size: 0.95rem;
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+
+.charts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
+}
+
+.chart-card {
+  background: #FFFFFF;
+  border: 1px solid #D0D7DE;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+}
+
+.chart-card h3 {
+  margin: 0 0 16px;
+  font-size: 1.1rem;
+  color: #1F2328;
+}
+
+.stats-loading {
+  text-align: center;
+  padding: 40px;
+  color: #656D76;
+}
+
+@media (max-width: 768px) {
+  .stats-page {
+    padding: 20px 16px;
+  }
+  .charts-grid {
+    grid-template-columns: 1fr;
+  }
+}

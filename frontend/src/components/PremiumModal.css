@@ -1,0 +1,130 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: fadeIn 0.2s ease;
+}
+
+.premium-modal {
+  background: #FFFFFF;
+  border-radius: 16px;
+  padding: 32px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  animation: scaleIn 0.3s ease;
+}
+
+.premium-modal h2 {
+  margin: 0 0 8px;
+  color: #CF222E;
+  font-size: 1.5rem;
+}
+
+.premium-modal p {
+  color: #1F2328;
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+.payment-methods {
+  margin: 16px 0;
+}
+
+.payment-methods h3 {
+  font-size: 1rem;
+  margin-bottom: 12px;
+  color: #0969DA;
+}
+
+.payment-card {
+  background: #F6F8FA;
+  border: 1px solid #D0D7DE;
+  border-radius: 10px;
+  padding: 14px;
+  margin-bottom: 12px;
+}
+
+.payment-card h4 {
+  margin: 0 0 6px;
+  color: #1F2328;
+}
+
+.payment-card p {
+  margin: 4px 0;
+  font-size: 0.9rem;
+}
+
+.payment-card a {
+  color: #0969DA;
+}
+
+.whatsapp-section {
+  background: #E6F7E6;
+  border: 1px solid #B7E1B7;
+  border-radius: 10px;
+  padding: 14px;
+  margin: 16px 0;
+  text-align: center;
+}
+
+.whatsapp-section p {
+  margin: 0 0 10px;
+  font-size: 0.9rem;
+  color: #1F2328;
+}
+
+.whatsapp-btn {
+  display: inline-block;
+  background: #25D366;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: background 0.2s;
+}
+
+.whatsapp-btn:hover {
+  background: #1DA851;
+}
+
+.info-text {
+  font-size: 0.85rem;
+  color: #656D76;
+  margin-top: 16px;
+}
+
+.close-modal-btn {
+  background: #0969DA;
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 16px;
+  transition: background 0.2s;
+}
+
+.close-modal-btn:hover {
+  background: #0550AE;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleIn {
+  from { transform: scale(0.95); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
